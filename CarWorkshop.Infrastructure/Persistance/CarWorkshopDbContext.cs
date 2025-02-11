@@ -19,10 +19,6 @@ namespace CarWorkshop.Infrastructure.Persistance
         {
             modelBuilder.Entity<Domain.Entitis.CarWorkshop>().OwnsOne(x => x.ContactDetails);
 
-
-            //modelBuilder.Entity<Domain.Entitis.CarWorkshop>().Property(x => x.Name).IsRequired();
-            //modelBuilder.Entity<Domain.Entitis.CarWorkshop>().Property(x => x.CreateAt).HasDefaultValue(DateTime.UtcNow);
-            //modelBuilder.Entity<Domain.Entitis.CarWorkshop>().OwnsOne(x => x.ContactDetails);
         }
     }
 }
