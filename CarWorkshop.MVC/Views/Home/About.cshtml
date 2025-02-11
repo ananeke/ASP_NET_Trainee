@@ -1,0 +1,35 @@
+﻿ 
+@{
+    ViewData["Title"] = "About";
+
+    
+}
+@foreach (var item in Model)
+{
+    <div class="text-center">
+        <h1>@item.Title</h1>
+        <div class="alert alert-primary">
+            @item.Description</div>
+
+        @foreach(var it in @item.Tags){
+            @it
+        }
+        <p>......................</p>
+        
+    </div>
+}
+
+
+
+
+
+
+
+
+<div class="text-center">
+    <h1 class="display-4">About</h1>
+    <p>This is a simple text About</p>
+    Title
+    Description
+    Tags
+</div>
